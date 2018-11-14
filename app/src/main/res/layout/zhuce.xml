@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/shuru"
+        android:background="@drawable/t3"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="80dp"
+        android:ems="10"
+        android:imeOptions="actionSearch"
+        android:maxLength="18"
+        android:textColor="@color/black"
+        android:inputType="number"
+        android:hint="请输入用户名(数字)" />
+
+    <EditText
+        android:id="@+id/shuru1"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginLeft="80dp"
+        android:ems="10"
+        android:imeOptions="actionSearch"
+        android:maxLength="18"
+        android:textColor="@color/black"
+        android:inputType="textPassword"
+        android:hint="请输入密码"/>
+
+
+
+    <!--       //非空验证
+                if (shuru_username.getText().toString().equals("")){
+                    //设定自定义文字
+                    shuru_username.setError("输入框不能为空");
+                    shuru_password.setError("输入框不能为空");
+                    shuru_querenpassword.setError("输入框不能为空");
+                    shuru_email.setError("输入框不能为空");
+                    //设置自定义文字和图片
+                    Drawable d = getResources().getDrawable(R.drawable.t4);
+                    d.setBounds(0, 0, 100, 100);//必须设置大小，否则不显示
+                    shuru_username.setError("有错误提示",d);
+                    //设置文字颜色
+                  /*  shuru_username.setError(Html.fromHtml("<font color=#00ffff>字体颜色设置</font>"));*/
+                }
+                break;-->
+    <EditText
+        android:id="@+id/shuru2"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="230dp"
+        android:layout_marginLeft="80dp"
+        android:ems="10"
+        android:imeOptions="actionSearch"
+        android:maxLength="18"
+        android:textColor="@color/black"
+        android:inputType="textPassword"
+        android:hint="确认密码"/>
+
+    <EditText
+        android:id="@+id/shuru3"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="280dp"
+        android:layout_marginLeft="80dp"
+        android:ems="10"
+        android:imeOptions="actionSearch"
+        android:maxLength="18"
+        android:textColor="@color/black"
+        android:hint="填写邮箱"/>
+
+    <CheckBox
+        android:id="@+id/cbk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="340dp"
+        android:layout_marginLeft="80dp"
+        android:text="同意相关协议"/>
+
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="390dp"
+        android:layout_marginLeft="150dp"
+        android:text="立即注册"/>
+
+</RelativeLayout>
